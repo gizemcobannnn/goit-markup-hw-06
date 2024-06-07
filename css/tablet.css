@@ -23,11 +23,18 @@
     .section-two{
         width:100%;
         display: flex;
+        flex-wrap: wrap;  
+        max-width:100vw; 
     }
     .listt-two{
-        min-width: 100px;
+        width:100%;
         display: flex;
-        flex-wrap: wrap;    
+        flex-wrap: wrap;  
+        max-width:100vw; 
+    }
+    .li-two{
+        min-width: 100px;
+        flex:1 0 100px;
         align-content: stretch;  
     }
     .stwo-pic{
@@ -39,4 +46,49 @@
     .li-two>.p-class{
         font-size:16px;
     }
+    .section-three .container{
+        display: flex;
+        
+    }
+    .du-header{
+        margin: 0 auto;
+        background-color: yellow;
+    }
+
+    .our-team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap:30px;
+        max-width:100vw;
+    }
+    .our-team-list social{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .ot-list img{
+        width: 100%;
+        height: 50%;
+    }
+    .portfolio-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap:100px;
+        justify-content: space-between;
+        max-width:100vw;
+        background-color:gray; 
+    }
+    .portfolio-list li{
+        margin-inline: auto;
+        flex: 1 1 150px;
+        display: block;
+    }
+    .portfolio-list img{
+        width: 100%;
+        height: 50%;
+    }
+    .our-port{
+        margin: 0 aut0;
+    }
+
 }
