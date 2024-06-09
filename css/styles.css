@@ -20,7 +20,8 @@ body{
 .container{
     margin: 0 auto;
     padding: 0 15px;
-    width: 1158px; 
+    justify-content: space-between;
+    align-items: center;
 }
 .headerc-one{
     display: flex;
@@ -326,6 +327,7 @@ section{
     list-style-type: none;
     gap:24px;
 
+
  }
 .section-three .social-link{
     width: 100%;
@@ -345,6 +347,9 @@ section{
 }
 .social-link-pic{
     fill:#f4f4fd;
+}
+.section-three{
+    padding: 96px 108px;
 }
 .section-three .du-header{
     font-size: 36px;
@@ -392,7 +397,6 @@ section{
 }
 .section-four{
     padding: 120px 0 120px 0;
-
 }
 .section-four h2{
     font-size: 36px;

@@ -11,4 +11,5 @@
     .portfolio-list .li-portfolio{
         width: calc((100% - 48px) / 3) ; 
     }
+
 }
