@@ -1,4 +1,4 @@
-@media screen and (min-width:768px) and (max-width:1158px) {
+@media screen and (min-width:1158px) {
     .section-two .li-two{
         width: calc((100% - 72px) / 4);
     }
