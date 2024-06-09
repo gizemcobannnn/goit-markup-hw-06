@@ -7,13 +7,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/desktop.css">
     <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/tablet.css">
-
+    <!-- Scripts -->
+    <script>
+        function closeNav() {
+          var x = document.getElementById("hamburger-menu");
+          if (x.style.display === "flex") {
+            x.style.display = "none";
+          } 
+          else {
+            x.style.display = "flex";
+          }
+        }
+        function closeModal() {
+          var y = document.getElementById("last-section-one");
+          if (y.style.display === "flex") {
+            y.style.display = "none";
+          } 
+          else {
+            y.style.display = "flex";
+          }
+        }
+        </script>
+    <!-- End of Scripts -->
 </head>
+
 <body>
     <header class="headerc-one">
         <div class="head-container container">
@@ -43,6 +66,61 @@
                         </li>
                     </ul>
             </address>
+            <div class="mobil-nav">
+                 <!-- Button to open the overlay navigation -->
+            <a href="javascript:void(0)" class="barbtn" onclick="closeNav()">
+                <i class="fa fa-bars"></i>
+                </a>
+                <!-- Overlay content -->
+                <div class="hamburger" id="hamburger-menu">
+                <!-- Button to open the overlay navigation -->
+                <button class="closebtn" type="button"  onclick="closeNav()"><svg class="modal-close-cross hamburger-closebtn" width="24" height="24"><use href="./images/icons.svg#icon-cross"></use></svg></button>
+                <div class="mobile-nav-pagelinks">
+                    <a  class="mobile-nav-index" href="">Studio</a>
+                    <a  class="mobile-nav-index" href="">Portfolio</a>
+                    <a  class="mobile-nav-index" href="">Contacts</a>
+                </div>
+                <div class="hamburger-adress-socials">
+                <address class="address">
+                    <ul class="mobile-nav-address-list">
+                        <li><a class="details" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li><a class="details" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+                <div class="hamburger-menu-socials">
+                    <ul class="social-medias">
+                        <li class="footer-item">
+                            <a href class="footer-item-link">
+                                <svg class="s-footer" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        <li class="footer-item">
+                            <a href class="footer-item-link">
+                                <svg class="s-footer" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href class="footer-item-link">
+                                <svg class="s-footer" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href class="footer-item-link">
+                                <svg class="s-footer" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -380,6 +458,70 @@
             </div>
         </div>
     </footer>
+    <div class="last-section" id="last-section-one">
+        <div class="modal-section">
+            <button class="modal-button" type="button" onclick="closeModal()">
+                <svg class="button-svg" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <p class="model-text">Leave your contacts and we will call you back</p>
+            <form class="form-last-section">
+                <div class="form-model">
+                    <label class="label-name" for="user-name">Name</label>
+                    <div class="inputs-div">
+                        <input class="input-one" type="text" id="user-name" name="user-name"/>
+                        <svg class="input-svg" id="person-icon" width="18" height="24" >
+                            <use href="./images/icons.svg#icon-person-black"></use>
+                        </svg> 
+                    </div>
+                </div>   
+
+                <div class="form-model">
+                    <label class="label-name">Phone</label>
+                    <div class="inputs-div">
+                        <input class="input-one" type="text" id="user-phone" name="user-phone"/>
+                        <svg class="input-svg" width="18" height="24" >
+                                <use href="./images/icons.svg#icon-phone-black"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="form-model">
+                    <label class="label-name">Email</label>
+                    <div class="inputs-div">
+                        <input class="input-one" type="text" id="user-mail" name="user-mail"/>
+                        <svg class="input-svg" width="18" height="24" >
+                            <use href="./images/icons.svg#icon-email-black"></use>
+                        </svg> 
+                    </div>
+                </div>        
+                
+                <div class="form-model-text">
+                    <label class="label-name" for="user-comment">Comment</label>
+                    <textarea class="text-comment"  id="user-comment" name="user-comment" placeholder="Text input" >
+
+                    </textarea>
+                </div>
+
+                <div class="form-checkbox">
+                    <input class="privacy-checkbox visually-hidden" id="user-privacy" type="checkbox" value="true" name="user-privacy" />
+                    <label class="privacy-label" for="user-privacy">
+                        <span class="label-span">
+                            <svg width="10" height="8">
+                                <use href="./images/icons.svg#icon-Vector"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the
+                        <a class="privacy-link" href="">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button class="button-link" type="submit">SEND</button>
+                
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>

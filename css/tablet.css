@@ -1,14 +1,15 @@
 @media screen and (min-width: 768px) and (max-width:1157px) {
+
     .head-container{
         width: 100%;
         margin: 0;
-        align-items: baseline;
     }
-    .contacts{
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 80px;
+    .mobil-nav{
+        display: none;
+    }
+    .contacts .ccontacts-list{
         flex-direction: column;
+        gap:12px;
     }
     .section-one{
         width:100%;
@@ -36,8 +37,7 @@
         width:100%;
         display: flex;
         flex-wrap: wrap;  
-        max-width:100vw; 
-        padding: 96px;
+        padding: 96px 16px;
     }
     .stwo-text{
         width: 356px;
@@ -49,20 +49,21 @@
         gap:24px;
         width:100%;
         justify-content: center;
-
     }
-
+    .section-two .stwo-pic{
+        display: none;
+    }
     .section-two .container{
         width: 100%;
         padding: 0;
-        margin: 0;
+        margin: 0; 
+    }
+    .li-two{
+        max-height: 120px;
     }
 
 
-    .stwo-pic{
-        visibility: hidden;
-    }
-    .li-two>.third-header{
+    .li-two .third-header{
         font-size: 36px;
         font-weight: 700;
         text-align: left;
@@ -86,45 +87,29 @@
     }
     .du-header{
         font-size:16px;
-        background-color: yellow;
     }
 
-    .our-team-list {
+    .section-three .our-team-list {
         display: flex;
         flex-wrap: wrap;
-        gap:30px;
-        max-width:100vw;
-        min-width: 100vw;
+        width:100%;
+        justify-content: center;
     }
-    .ot-list{
-        flex:1 1 150px; 
-        max-width: 200px;
-    }
+
     .our-team-list .social{
         width: 100%;
         display: flex;
-        justify-content: space-around;
     }
     .ot-list img{
         width: 100%;
-        height: 50%;
     }
-    .portfolio-list{
+    .section-four .portfolio-list{
         display: flex;
         flex-wrap: wrap;
         gap:100px;
-        justify-content: space-between;
-        max-width:100vw;
+        justify-content: center;
     }
-    .portfolio-list li{
-        margin-inline: auto;
-        flex: 1 1 150px;
-        display: block;
-    }
-    .portfolio-list img{
-        width: 100%;
-        flex:1;
-    }
+
     .our-port{
         margin: 0 aut0;
     }
