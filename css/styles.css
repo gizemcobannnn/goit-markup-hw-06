@@ -99,9 +99,8 @@ p{
     
 }
 .head-container .a-link-one{
-    border-bottom: 1px solid #e7e9fc;
     margin-right: 76px;
-    box-shadow:  2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
+    box-shadow:  none; 
 }
 
 .studio::after {
@@ -508,7 +507,6 @@ section{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#FFFFFF;
-    margin-bottom: 16px;
 }
 .social-medias{
     display: flex;
