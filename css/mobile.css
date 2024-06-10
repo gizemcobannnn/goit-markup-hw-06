@@ -197,6 +197,9 @@
     .footer-m .container div{
         flex: 1 1 100px;
     }
-
+    .form-send{
+        display: flex;
+        flex-wrap: wrap;
+    }
     
 }
