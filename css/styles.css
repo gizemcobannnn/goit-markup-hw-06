@@ -555,6 +555,8 @@ section{
 }
 .form-send{
     display: flex; 
+    flex-direction: row;
+    align-items: flex-start;
     gap: 24px;
 }
 .first-input{
