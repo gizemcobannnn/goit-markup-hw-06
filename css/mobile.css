@@ -1,5 +1,8 @@
 @media screen and (max-width:767px) {
-
+    .container{
+        min-width: 320px;
+        width: 100%;
+    }
     .head-container{
         display: flex;
         width: 100%;
@@ -203,15 +206,19 @@
         padding: 0;
     }
     .footer-m{
-        max-width: 100%;
+        padding: 96px 108px;
     }
-    .footer-m .container{
-        display: flex;
-        flex-wrap: wrap;
+    .footer-m .footer-container{
+        display: block;
         max-width: 100%;
         gap: 30px ;
         align-items: center;
         justify-content: center; 
+    }
+    .footer-container{
+        display: block;
+        padding: 0;
+        max-width: 100%;
     }
     .footer-m .container div{
         flex: 1 1 100px;
@@ -232,5 +239,11 @@
         flex-wrap: wrap;
             
     }
-    
+    .form-send-email{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-submit{
+        width: 165px;
+    }
 }

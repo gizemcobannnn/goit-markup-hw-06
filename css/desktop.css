@@ -27,14 +27,15 @@
         margin: 0 auto;  
     }
     .section-three{
-        max-width: 1158px;
         margin: 0 auto;  
     }
     .section-four{
         max-width: 1158px;
         margin: 0 auto;  
     }
-
+    .footer-container{
+        display: flex;
+    }
 
 
 }
